@@ -1,0 +1,49 @@
+#waiting-screen {
+  color: yellow;
+  font-size: 10vmin;
+  display: none;
+  animation: blink 1s ease-in-out infinite;
+}
+
+.snake {
+  grid-area: 5 / 5;
+  background-color: blue;
+}
+
+.egg {
+  grid-column: span 1;
+  border-radius: 50%;
+  animation: shrink 1.5s ease-in-out infinite;
+}
+
+.special-egg {
+  grid-column: span 1;
+  border-radius: 50%;
+  background-color: red;
+  animation: shrink 1.5s ease-in-out infinite;
+  box-shadow: 10px 10px 10px black;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
