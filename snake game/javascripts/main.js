@@ -21,8 +21,8 @@ let egg = new Egg(gameBoard);
 let snake = new Snake(gameBoard);
 let endgame = new EndGame();
 
-let gameMusic = new Audio("../audio/gameMusic.mp3");
-let eatSound = new Audio("../audio/eat.mp3");
+let gameMusic = new Audio("./../audio/gameMusic.mp3");
+let eatSound = new Audio("./../audio/eat.mp3");
 
 gameMusic.loop = true;
 
