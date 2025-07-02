@@ -1,5 +1,7 @@
 export default class EndGame {
-  #losingSound = new Audio("../audio/thud.mp3");
+  #losingSound = new Audio(
+    "https://vicky2805vky.github.io/snake-game/audio/thud.mp3"
+  );
 
   checkEndGame(snakeBody, score, gameSettingsValues, gameMusic) {
     if (
