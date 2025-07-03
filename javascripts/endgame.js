@@ -27,7 +27,7 @@ export default class EndGame {
   }
   displayGameOver(score) {
     this.#losingSound.play();
-    if (confirm("GAME OVER, do you wanna replay")) {
+    if (confirm("GAME OVER, do you want to play again?")) {
       window.location.reload();
       if (localStorage.getItem("highScore")) {
         if (localStorage.getItem("highScore") < score) {
